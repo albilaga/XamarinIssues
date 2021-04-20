@@ -19,7 +19,7 @@ namespace XamarinIssues.TabViews
             TabView.TabItems.Add(new Tab2View());
             TabView.TabItems.Add(new Tab3View());
             TabView.TabItems.Add(new Tab4View());
-            // TabView.TabItems.Add(new Tab5View());
+            TabView.TabItems.Add(new Tab5View());
         }
     }
 }

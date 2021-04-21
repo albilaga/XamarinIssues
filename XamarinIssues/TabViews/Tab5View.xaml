@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<views:TabViewItem xmlns="http://xamarin.com/schemas/2014/forms"
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-                   xmlns:views="http://xamarin.com/schemas/2020/toolkit"
-                   Text="Tab 5"
                    x:Class="XamarinIssues.TabViews.Tab5View">
     <Label Text="Tab 5" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
-</views:TabViewItem>
+</ContentView>

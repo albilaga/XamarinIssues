@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Xamarin.Forms;
 using XamarinIssues.TabViews;
+using XamarinIssues.TabViews.TabViewWithVM;
 
 namespace XamarinIssues
 {
-    public partial class MainPage : ContentPage
+    public partial class MainPage
     {
         public MainPage()
         {
@@ -19,10 +15,15 @@ namespace XamarinIssues
         {
             Navigation.PushAsync(new MainTabPage());
         }
-        
+
         private void TabViewOnCsClicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new MainTabCreatePage());
+        }
+
+        private void TabViewWithItemSourceClicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new MainTabWithVm());
         }
     }
 }

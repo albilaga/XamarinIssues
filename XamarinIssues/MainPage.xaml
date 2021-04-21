@@ -2,12 +2,11 @@
 
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:XamarinIssues"
-             xmlns:views="http://xamarin.com/schemas/2020/toolkit"
              x:Class="XamarinIssues.MainPage">
 
     <StackLayout VerticalOptions="Center">
         <Button Text="TabView in Xaml" Clicked="TabViewOnXamlClicked"/>
         <Button Text="Tabview in cs" Clicked="TabViewOnCsClicked"/>
+        <Button Text="Tabview with items source" Clicked="TabViewWithItemSourceClicked"/>
     </StackLayout>
 </ContentPage>

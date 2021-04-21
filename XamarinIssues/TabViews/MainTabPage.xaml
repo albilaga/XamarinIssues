@@ -6,10 +6,20 @@
              xmlns:tabViews="clr-namespace:XamarinIssues.TabViews;assembly=XamarinIssues"
              x:Class="XamarinIssues.TabViews.MainTabPage">
     <views:TabView TabStripPlacement="Bottom" x:Name="TabView">
-        <tabViews:Tab1View />
-        <tabViews:Tab2View />
-        <tabViews:Tab3View />
-        <tabViews:Tab4View />
-        <tabViews:Tab5View />
+        <views:TabViewItem Text="Tab 1">
+            <tabViews:Tab1View />
+        </views:TabViewItem>
+        <views:TabViewItem Text="Tab 2">
+            <views:LazyView x:TypeArguments="tabViews:Tab2View" />
+        </views:TabViewItem>
+        <views:TabViewItem Text="Tab 3">
+            <tabViews:Tab3View />
+        </views:TabViewItem>
+        <views:TabViewItem Text="Tab 4">
+            <views:LazyView x:TypeArguments="tabViews:Tab4View" />
+        </views:TabViewItem>
+        <views:TabViewItem Text="Tab 5">
+            <tabViews:Tab5View />
+        </views:TabViewItem>
     </views:TabView>
 </ContentPage>
